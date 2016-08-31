@@ -19,7 +19,7 @@ grails prod war ROOT.war
 ```sh
 sudo cp ROOT.war /usr/share/tomcat8/webapps/
 ```
-- 5) start tomcat (if not yet running or restart it (if already running)
+- 5) start tomcat (if not yet running) or restart it (if already running)
 ```sh
 sudo service tomcat8 start
 or
