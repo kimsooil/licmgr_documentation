@@ -2,7 +2,7 @@
 Requirements: Grails 2.5.4+, JDK 8, Tomcat8, Git
 
 ### How to install:
-- 1) get clone from git
+- 1) get clone from git (password protected)
 ```sh
 git clone https://github.com/kimsooil/licmgr.git
 cd licmgr
