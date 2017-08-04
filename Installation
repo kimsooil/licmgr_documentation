@@ -1,40 +1,0 @@
-#License management system
-
-### How to install 
--- see [installation guide](https://github.com/kimsooil/licmgr_documentation/blob/master/Installation.md)
-
-### Admin-only API
-- For now, output formats are XML. It can be JSON or Text if needed
-- **/sitemgrs** : showing all site managers
-- **/sitemgr/**_A_COMPANY_: showing all accounts with company name=A_COMPANY
-- **/api**: showing all users
-- **/cwslink/**_COMPANY/USERNAME_: all info of username=USERNAME & company=COMPANY
-- **/lic_urls**: Show all available/valid license checking urls only if both site_key and user_key exist (format: text).
-
-### License validation URL format
-- (output format: text/html)
-- **/licmgr/**_COMPANY_NAME/SITE_KEY/USER_KEY_
-
-### Super Admin
-- login as 'chromworks' in TEST server
-![login](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture1.png)
-- Create Site: Also, site users will be created as many as # of seats
-- Important: company, site key must be URL-safe and unique since those are being used in the license validation URL.
-- Number of seats are limited 1~999. But it's possible to edit as admin in separate Admin-only page
-
-![create site](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture2.png)
-- Show site (after creation)
-![show site](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture3.png)
-- Edit site
-![edit site](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture4.png)
-
-### Site Manager
-- List site users
-![List site users](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture5.png)
-- Edit site user info (Entering user key)
-![Edit user](https://github.com/kimsooil/licmgr_documentation/blob/master/Picture6.png)
-
-### Site user
-- Site users just need to provide user key which is unique identifier of the PC they use
-- Site manager can edit it or Super Admin can do for them when they let us know what identifiers are
-- Program for retrieving id will be provided
